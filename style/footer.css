@@ -1,0 +1,46 @@
+@media (pointer:fine)
+{
+	footer img{
+		height: 25px;
+		width: 25px;
+	}
+	footer ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #4a4a4a;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 9;
+	}
+	footer li{
+		float: left;
+	}
+	footer li a{
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 12px 14px;
+		text-decoration: none;
+	}
+	footer li a:hover{
+		background-color: #111;
+	}
+	footer .text{
+		float: right;
+	}
+	footer .text a{
+		padding: 16px 16px;
+	}
+}
+
+
+@media (pointer:coarse)
+{
+	body{
+		
+	}
+}

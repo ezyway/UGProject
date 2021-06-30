@@ -1,0 +1,84 @@
+body{
+	margin:60px 0px;
+	padding:0px;
+	background: url(../assets/images/background/cpuDisplay.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100vw 100vh;
+}
+
+@media (pointer:fine)
+{
+	button{
+		cursor: pointer;
+	}
+	/* Color Overlay */
+	.colorOverlay{
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		background-color: black;
+		z-index: 0;
+		opacity: 0.6;
+	}
+
+
+	table{
+		position: relative;
+		width: 900px;
+	}
+	.nameTd{
+		height: 80px;
+		background-color: #f5f5f5;
+		border-radius: 10px;
+		font-size: 30px;
+		padding: 0px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+	.spacer{
+		height: 30px;
+	}
+	td{
+		text-align: center;
+		background-color: #dedede;
+		border-radius: 10px;
+	}
+	img{
+		width: 300px;
+		border-radius: 10px;
+	}
+	.imageTd{
+		width: 300px;
+		height:300px;
+		background-color: white;
+	}
+	.buttonTd{
+		height: 65px;
+		background-color: transparent;
+	}
+	button{
+		height: 50px;
+		width: 180px;
+		border-radius: 5px;
+		border: none;
+		background-color: grey;
+		color: white;
+		font-size: 18px;
+		transition:0.5s;
+	}
+	button:hover{
+		background-color: black;
+		color: white;
+		border: 3px solid white;
+	}
+	button:focus{ outline: none; }
+	
+}
+
+
+@media (pointer:coarse)
+{
+	body{
+		
+	}
+}

@@ -1,0 +1,166 @@
+body{
+	margin:0px;
+	padding:0px;
+	background: url(../assets/images/processors/cpu_insert_wallpaper.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+@media (pointer:fine)
+{
+	/* Color Overlay */
+	.colorOverlayNormal, .colorOverlayRed, .colorOverlayGreen{
+		position: absolute;
+		height: 680px;
+		width: 900px;
+		border-radius: 20px;
+		z-index: 0;
+	}
+	.colorOverlayNormal{
+		background-color: black;
+		opacity: 0.7;
+	}
+	.colorOverlayRed{
+		background-color: red;
+		opacity: 0.6;
+	}
+	.colorOverlayGreen{
+		background-color: green;
+		opacity: 0.7;
+	}
+	h1{
+		position: absolute;
+		color: white;
+	}
+	/* Color Overlay Over */
+	
+	.mainContainer{
+		width:900px;
+		height:660px;
+		margin:5px auto;
+	}
+	.row{
+		height:80px;
+		display:flex;
+		justify-content:center;
+	}
+	.col1, .col2, .col3, .col4{
+		height:80px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	.col1{
+		width:900px;
+	}
+	.col2{
+		width:450px;
+	}
+	.col3{
+		width:300px;
+	}
+	.col4{
+		width:225px;
+	}
+	
+	/* Material Design */
+	.group{
+		position:relative;
+		margin:15px;
+	}
+	.input{
+		width:350px;
+		padding:10px;
+		border:none;
+		background:transparent;
+		font-size:20px;
+		border-radius:5px;
+		transition:1s;
+		background-color:#f0f0f0;
+	}
+	.input:focus{
+		outline:none;
+		border:none;
+	}
+	label{
+		position:absolute;
+		top:10;
+		left:10;
+		font-size:20px;
+		pointer-events:none;
+		transition:0.5s;
+	}
+	.input:focus ~ label, .input:valid ~ label{
+		top:-20;
+		left:5;
+		font-size:15px;
+		color: white;
+	}
+
+	.bar{
+		width:350px;
+		position:relative;
+		display:block;
+		margin:0px auto;
+	}
+
+	.bar:before,.bar:after{
+		content:'';
+		position:absolute;
+		height:3px;
+		width:0px;
+		background:blue;
+		transition:0.5s;
+		top:-2px;
+	}
+	.bar:before{
+		right:50%;
+	}
+	.bar:after{
+		left:50%;
+	}
+	.input:focus ~ .bar:before, .input:focus ~ .bar:after{
+		width:50%;
+	}
+	
+	/* Arranging the Input Fields */
+	.col3 .input{
+		width:200px;
+	}
+	.col3bar{
+		width:200px;
+	}
+	.col4 .input{
+		width:130px;
+	}
+	.col4bar{
+		width:130px;
+	}
+	
+	/* Finishing Touches */
+	#submit{
+		border:none;
+		height:70px;
+		width:180px;
+		background-color:black;
+		color:white;
+		box-shadow:0px 0px 10px white;
+		border-radius:10px;
+		font-size:20px;
+		transition:0.5s;
+	}
+	#submit:hover{
+		background-color:white;
+		color:black;
+		box-shadow:0px 0px 10px white;
+	}
+}
+
+
+@media (pointer:coarse)
+{
+	body{
+		
+	}
+}

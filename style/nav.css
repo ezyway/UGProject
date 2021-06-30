@@ -1,0 +1,44 @@
+@media (pointer:fine)
+{
+	nav{
+		margin:0px;
+		width:100%;
+		background-color:black;
+		padding:20px;
+		padding-left:0px;
+		padding-right:0px;
+		position: fixed;
+		z-index: 9;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	nav ul{
+		margin:0px;
+		padding:0px;
+		width:100%;
+	}
+	nav ul li{
+		list-style-type:none;
+		display:inline-block;
+	}
+	nav ul li a{
+		text-decoration:none;
+		padding:20px 30px;
+		color:white;
+		font-family:Calibri;
+		font-size:18px;
+	}
+	nav ul li a:hover{
+		background-color:grey;
+	}
+	nav #login{
+		float:right;
+	}
+}
+@media (pointer:coarse)
+{
+body{
+	
+	}
+}

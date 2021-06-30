@@ -1,0 +1,79 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+
+@media (pointer:fine)
+{
+	body {
+		background-color: rgba(33,33,33,.9);
+		color: #787878;
+		font-size: 14px;
+	}
+	.wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+	main {
+		display: block;
+		background-color: #fff;
+		margin-bottom: 50px;
+	}
+	.headingContainer{
+		width: 100%;
+		text-align: center;
+	}
+	.container {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+		display: flex;
+		justify-content: center;
+		height: 250px;
+	}
+	.container img{
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px black;
+		height: 200px;
+		margin: 20px;
+	}
+	h2 {
+		font-size: 40px;
+	}
+	.content {
+		padding: 40px 0;
+	}
+	.parallax {
+		height: 600px;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	.parallax-1 {
+		background-image: url("../assets/images/parallax/games/gears5/background.webp");
+	}
+	.parallax-2 {
+		background-image: url("../assets/images/parallax/games/ghostReconBreakPoint/background.webp");
+	}
+	.parallax-3 {
+		background-image: url("../assets/images/parallax/games/division2/background.webp");
+		background-position: 0% 50%;
+	}  
+	.parallax-4 {
+		background-image: url("../assets/images/parallax/games/gtav/background.webp");
+	}  
+	.parallax-5 {
+		background-image: url("../assets/images/parallax/games/gears5/background.webp");
+	}  
+	.parallax-6 {
+		background-image: url("../assets/images/parallax/games/gears5/background.webp");
+	}  
+}
+@media (pointer:coarse)
+{
+	body{
+		
+	}
+}

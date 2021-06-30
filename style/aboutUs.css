@@ -1,0 +1,66 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+
+@media (pointer:fine)
+{
+	body {
+		background-color: rgba(33,33,33,.9);
+		color: #787878;
+		font-size: 14px;
+	}
+	.wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+	main {
+		display: block;
+		background-color: #fff;
+		margin-bottom: 50px;
+	}
+	.container {
+		width: 100%;
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	h2 {
+		font-size: 60px;
+	}
+	p {
+		margin-bottom: 40px;
+		font-size: 20px;
+		font-weight: 300;
+		text-align: justify;
+		line-height: 1.5;
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+	.content {
+		padding: 40px 0;
+	}
+	.parallax {
+		height: 600px;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	.parallax-1 {
+		background-image: url("../assets/images/parallax/aboutUS/amd.jpg");
+	}
+	.parallax-2 {
+		background-image: url("../assets/images/parallax/aboutUS/ryzen.jpg");
+	}
+	.parallax-3 {
+		background-image: url("../assets/images/parallax/aboutUS/radeon.jpg");
+	}
+}
+@media (pointer:coarse)
+{
+	body{
+		
+	}
+}

@@ -1,0 +1,174 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-color:grey;
+}
+
+@media (pointer:fine)
+{
+	.spacer{
+		height: 60px;
+	}
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	.main_container{
+		display:flex;
+		justify-content:center;
+		align-content:center;
+		width:100%;
+		height:600px;
+		margin-top:5%;
+		transition:1s;
+	}
+	.container{
+		height:550px;
+		width:35%;
+		margin:auto;
+		background-color:white;
+		border-radius:20px;
+		box-shadow:0px 0px 15px black;
+		background-color:#e3e3e3;
+		transition:1s;
+	}
+	.container:hover{
+		box-shadow:0px 0px 30px black;
+		background-color:#d9d9d9;
+	}
+	.image_container{
+		width:100%;
+		display:flex;
+		justify-content:center;
+		height:75%;
+	}
+	.image_container img{
+		width:70%;
+		cursor:pointer;
+		border-radius:10px;
+		margin:20px;
+		box-shadow:0px 0px 5px black;
+		transition:1s;
+	}
+	.image_container img:hover{
+		box-shadow:0px 0px 20px black;
+	}
+	.title{
+		width:100%;
+		text-align:center;	
+		height:10%;
+		font-size:30px;
+	}
+	.container .description{
+		width:100%;
+		text-align:center;
+		height:15%;
+	}
+	/*--------------------------------------------
+					Page Heading Codes
+	--------------------------------------------*/
+	.pageHeadingDiv{
+		height: 650px;
+		background: url("../assets/images/background/cpuSelect.jpg");
+		background-position: 50% 0%;
+		background-size: 1920px 650px;
+		background-repeat: no-repeat;
+	}
+	.fullContainer{
+		position: absolute;
+		background-color: white;
+		padding: 50px;
+		border-radius: 5px;
+		right: 100;
+		top: 150;
+	}
+	.fullContainer h1{
+		margin: 0 0 40px 0;
+		font-size: 50;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+	/*--------------------------------------------
+					Content Codes
+	--------------------------------------------*/
+	.videoContainer{
+		background: url("../assets/images/background/cpuSelect/1.webp");
+		height: 700px;
+		text-align: center;
+	}
+	.videoContainer video{
+		height: 500px;
+	}
+	.videoContainer .heading{
+		font-size: 50px;
+		color: white;
+		padding: 30px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+
+	.twoImgTable{
+		text-align: center;
+		color: white;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+	.twoImgTable img{
+		width: 600px;
+		padding: 30px;
+	}
+	.twoImgTable .heading{
+		font-size: 30px;
+	}
+	.twoImgTable .description{
+		font-size: 15px;
+	}
+
+	.threeVideoContainer{
+		margin-top: 80px;
+		height: 550px;
+		background: url("../assets/images/background/cpuSelect/2.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.threeVideoContainer table{
+		width: 100%;
+		color: white;
+		text-align: center;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+	.threeVideoContainer video{
+		width: 450px;
+		padding: 20px;
+		padding-top: 40px;
+	}
+	.threeVideoContainer .heading{
+		font-weight: bold;
+		font-size: 38px;
+		padding-top: 20px;
+	}
+	.threeVideoContainer .heading2{
+		font-size: 25px;
+		padding-top: 20px;
+	}
+	.threeVideoContainer .description{
+		padding-top: 20px;
+		font-size: 18px;
+	}
+
+	.contentContainer{
+		padding-top: 30px;
+		height: 600px;
+		background-color: black;
+		margin-top:30px;
+		text-align: center;
+		color: white;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+	.contentContainer .heading{
+		font-size: 40px;
+		font-weight: bold;
+		padding-top: 50px;
+	}
+	.contentContainer .description{
+		font-size: 20px;
+		padding-top: 10px;
+	}
+}

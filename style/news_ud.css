@@ -1,0 +1,209 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+
+@media (pointer:fine)
+{
+	/* Select Output table design */
+	table{
+		background-color: #f5f5f5;
+		text-align: center;
+		width: 100%;
+	}
+	th{
+		background-color: blue;
+		color:white;
+		font-size: 18px;
+		padding:10px;
+		border-radius:5px;
+	}
+	tr:nth-child(odd){
+		background-color: #dee6ff;
+	}
+	tr:nth-child(even){
+		background-color: #d4deff;
+	}
+	tr:hover{
+		background-color: #c9d6ff;
+	}
+	
+	
+	/* Material Design */
+	*{
+		box-sizing:border-box;
+	}
+	.group{
+		position:relative;
+		margin:15px;
+	}
+	.input{
+		width:350px;
+		padding:10px;
+		border:none;
+		background:transparent;
+		font-size:20px;
+		border-radius:5px;
+		transition:1s;
+		background-color:#f0f0f0;
+	}
+	.input:focus{
+		outline:none;
+		border:none;
+	}
+	label{
+		position:absolute;
+		top:10px;
+		left:5px;
+		font-size:20px;
+		pointer-events:none;
+		transition:0.5s;
+	}
+	.input:focus ~ label, .input:valid ~ label{
+		top:-20px;
+		font-size:15px;
+		color:blue;
+	}
+
+	.bar{
+		width:350px;
+		position:relative;
+		display:block;
+		margin:0px auto;
+	}
+
+	.bar:before,.bar:after{
+		content:'';
+		position:absolute;
+		height:3px;
+		width:0px;
+		background:blue;
+		transition:0.5s;
+		top:-2px;
+	}
+	.bar:before{
+		right:50%;
+	}
+	.bar:after{
+		left:50%;
+	}
+	.input:focus ~ .bar:before,.input:focus ~ .bar:after{
+		width:50%;
+	}
+	textarea{
+		height:200px;
+	}
+
+
+	/* Designing Form */
+	#update, #delete{
+		width:100px;
+		height:50px;
+		margin:10px 50px;
+		border:none;
+		color:white;
+		font-size: 1em;
+		border-radius:10px;
+		box-shadow:0px 0px 5px black;
+		transition:1s;
+	}
+	#update{
+		background-color: green;
+	}
+	#update:hover{
+		background-color: darkgreen;
+	}
+	#delete{
+		background-color: red;
+	}
+	#delete:hover{
+		background-color: darkred;
+	}
+	.belowRecords{
+		width:90%;
+		margin:5% auto;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	/* Aligning Button and the Input */
+	.udButton{
+		background-color: lightgrey;
+		border-radius:10px;
+		padding:50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	/* Update Value Insertion Table/Form */
+	.headingCol, .colInputName, .colInputAbout, .colInputContent, .colButton{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width:100%;
+		height:90px;
+	}
+	.mainFormContainer{
+		background-color: lightgrey;
+		border-radius:10px;
+		width:600px;
+	}
+	.headingCol{
+		font-size: 35px;
+		font-weight: bold;
+	}
+	.colInputContent{
+		height:250px;
+	}
+
+	.colButton{
+		height:120px;
+	}
+	.row{
+		height: 120px;
+		width:300px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.marginMaker{
+		height:20px;
+	}
+	
+
+	/* Finishing Touches */
+	#submit,#cancel{
+		border:none;
+		height:70px;
+		width:180px;
+		background-color:black;
+		color:white;
+		box-shadow:0px 0px 10px white;
+		border-radius:10px;
+		font-size:20px;
+		transition:0.5s;
+	}
+	#cancel{
+		background-color: red;
+	}
+	#submit:hover{
+		background-color:white;
+		color:black;
+		box-shadow:0px 0px 10px white;
+	}
+	#cancel:hover{
+		background-color: darkred;
+	}
+}
+
+
+@media (pointer:coarse)
+{
+	body{
+		
+	}
+}

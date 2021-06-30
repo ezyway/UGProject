@@ -1,0 +1,178 @@
+body{
+	margin:0px;
+	padding:0px;
+	background: url(../assets/images/background/adminLoginWallpaper.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+@media (pointer:fine)
+{
+	#submit{
+		height:40px;
+		width:100px;
+		background-color:white;
+		transition:0.5s;
+		border:none;
+		border-radius:5px;
+		font-size:20px;
+		box-shadow:2px 2px 10px grey;
+	}
+	#submit:hover{
+		box-shadow:5px 5px 10px grey;
+	}
+
+	
+	table{
+		height:380px;
+		width:500px;
+	}
+	td{
+		text-align:center;
+	}
+	#heading{
+		text-align:center;
+		font-size:40px;
+		color:white;
+	}
+	.tdInput{
+		height:55%;
+	}
+	.tdSubmit{
+		height: 20%;
+	}
+	
+	
+	form{
+		position: absolute;
+		z-index: 3;
+		height: 100%;
+		width:100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.colorOverlayNormal, .colorOverlayRed{
+		position: absolute;
+		border-radius:20px;
+		z-index: 0;
+		height:20px;
+		width:20px;
+		height:380px;
+		width:500px;
+	}
+	.colorOverlayNormal{
+		background-color: black;
+		opacity:0.3;
+	}
+	.colorOverlayRed{
+		background-color: red;
+		opacity:0.2;
+	}
+	
+	/* Material Design */
+	*{
+		box-sizing:border-box;
+	}
+	.group{
+		position:relative;
+		margin:40px;
+	}
+	.input{
+		width:350px;
+		padding:10px;
+		border:none;
+		background:transparent;
+		font-size:20px;
+		border-radius:5px;
+		transition:1s;
+		background-color:#f0f0f0;
+		box-shadow:2px 2px 10px black;
+	}
+	.input:focus{
+		outline:none;
+		border:none;
+		box-shadow:5px 5px 10px grey;
+	}
+	.input:hover{
+		box-shadow:5px 5px 10px grey;
+	}
+	label{
+		position:absolute;
+		top:10px;
+		left:40px;
+		font-size:20px;
+		pointer-events:none;
+		transition:0.5s;
+	}
+	.input:focus ~ label, .input:valid ~ label{
+		top:-20px;
+		font-size:15px;
+		color:white;
+	}
+
+	.bar{
+		width:350px;
+		position:relative;
+		display:block;
+		margin:0px auto;
+	}
+
+	.bar:before,.bar:after{
+		content:'';
+		position:absolute;
+		height:3px;
+		width:0px;
+		background:blue;
+		transition:0.5s;
+		top:-2px;
+	}
+	.bar:before{
+		right:50%;
+	}
+	.bar:after{
+		left:50%;
+	}
+	.input:focus ~ .bar:before,.input:focus ~ .bar:after{
+		width:50%;
+	}
+
+	/* Minor Changes */
+	.submitGroup{
+		margin:0px auto 20px auto;
+	}
+	.headingGroup{
+		margin:0px;
+	}
+	.homeButtonColorOverlay{
+		position: absolute;
+		left: 10;
+		top: 10;
+		z-index: 5;
+		height: 70px;
+		width: 70px;
+		background-color: red;
+		border-radius: 10px;
+		opacity: 0.4;
+		cursor: pointer;
+	}
+	img{
+		position: absolute;
+		left: 10;
+		top: 10;
+		z-index: 6;
+		height: 50px;
+		width: 50px;
+		margin: 10px;
+		cursor: pointer;
+	}
+}
+
+
+@media (pointer:coarse)
+{
+	body{
+		
+	}
+}
